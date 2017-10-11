@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>ICE Team Project SDU</title>
+		<meta name="description" content="Natural Language Form with custom text input and drop-down lists" />
+		<meta name="keywords" content="Natural Language UI, sentence form, text input, contenteditable, html5, css3, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<script>
+		$(function() {
+		
+			$("#text-one").change(function() {
+				$("#text-two").load("textdata/" + $(this).val() + ".txt");
+			});
+			
+			$("#json-one").change(function() {
+			
+				var $dropdown = $(this);
+			
+				$.getJSON("jsondata/data.json", function(data) {
+				
+					var key = $dropdown.val();
+					var vals = [];
+										
+					switch(key) {
+						case 'beverages':
+							vals = data.beverages.split(",");
+							break;
+						case 'snacks':
+							vals = data.snacks.split(",");
+							break;
+						case 'base':
+							vals = ['Please choose from above'];
+					}
+					
+					var $jsontwo = $("#json-two");
+					$jsontwo.empty();
+					$.each(vals, function(index, value) {
+						$jsontwo.append("<option>" + value + "</option>");
+					});
+			
+				});
+			});
+
+		});
+	</script>
+	</head>
+	<body class="nl-blurred">
+		<div class="container demo-1">
+			<!-- Top Navigation -->
+			
+			<header>
+				<h1>Размещение Баннеров <span>на популярных сайтах Казахстана</span></h1>	
+			</header>
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+							Я хочу  
+					<select>
+						<option value="1" selected>разместить</option>
+						<option value="2">Создать</option>
+					</select>
+		баннер в формате
+					<select>
+						<option value="1" selected>flash</option>
+						<option value="2">html5</option>
+						<option value="3">.mp4</option>
+						<option value="4">gif</option>
+						<option value="2">.jpg</option>
+					</select>
+		на сайте
+				
+					<select id="text-one">
+						<option selected value="base">Please Select</option>
+						<option value="beverages">Beverages</option>
+						<option value="snacks">Snacks</option>
+					</select>
+		с размерами
+					
+					<select>
+						<option value="1" selected>240x320</option>
+					 	<option value="1">100x100</option>
+					 	<option value="2">200x500</option>
+					 	<option value="3">1024x720</option>
+					</select>,
+		с сроком на 
+					<select id="text-two">
+					<option>Please choose from above</option>
+					</select>
+
+					<br/> 
+					</br>
+		Пожалуйста отправьте  на  мою почту <input type="text" value="" placeholder="mymail@email.com" data-subline="Мы отправим стоимость вашей заявки вам на email "/> сколько это будет стоить 
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Окей</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div><!-- /container -->
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+	</body>
+</html>
