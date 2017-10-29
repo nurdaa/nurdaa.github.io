@@ -112,6 +112,78 @@ h6{
 	font-size: 1.2rem;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* People Amount Chek Start */
+
+
+.switch-field {
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  padding: 0px 1px 20px;
+	overflow: hidden;
+
+}
+
+.switch-title {
+  margin-bottom: 6px;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+  float: left;
+}
+
+.switch-field label {
+  display: inline-block;
+  width: 90px;
+  background-color: #e4e4e4;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-shadow: none;
+  padding: 6px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: #0063ec;
+  color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+
+/* People Amount Chek End */
+
+
+
+
 /* Widget Titles */
 .footer .widget-title, 
 .footer .widget-title a{
@@ -328,7 +400,13 @@ body,
 	background-color: #fff;
 }
 .section-block.featured-media{
-	background-color: #000;
+	background-image: url(../images/architecture/slider/slide-1-fs.jpg) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+  
 }
 
 /* greyscale */
@@ -3436,11 +3514,12 @@ blockquote.border{
 	margin: 0 !important;
 }
 .tabs[class*="style-"] .tab-panes{
-	border: none;
+	border-style: solid;
 }
 .tabs[class*="style-"]:not(.style-3) .tab-panes{
-	padding: 5rem 0 0 0;
-	border: none;
+	padding: 5rem 2.5rem 1rem;
+	
+	border-color: #f4f4f4;
 	background: none;
 }
 .tab-panes > div.active{

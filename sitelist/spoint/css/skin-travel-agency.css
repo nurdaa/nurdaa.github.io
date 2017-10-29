@@ -408,46 +408,6 @@ body,
 	color: #232323;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Recent Slider */
-.recent-carousel.replicable-content{
-	padding-top: 4rem;
-	padding-bottom: 1rem;
-}
-.recent-carousel .column.slider-column{
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-}
-.tm-slider-container.tms-carousel > ul{
-	opacity: 1;
-}
-.tm-slider-container.tms-carousel > ul > li{
-	padding: 0;
-}
-
-
-
-
-
-
-
-
-
-
 /* theme */
 .bkg-theme{
 	background-color: #933ded;
