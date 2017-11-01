@@ -18,6 +18,14 @@
 	<link rel="stylesheet" href="css/core.min.css" />
 	<link rel="stylesheet" href="css/skin.css" />
 
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!--Load Script and Stylesheet -->
+	<script type="text/javascript" src="js/jquery.simple-dtpicker.js"></script>
+	<link type="text/css" href="jquery.simple-dtpicker.css" rel="stylesheet" />
+	<!---->
+
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -383,7 +391,7 @@
 						</div>
 						<div class="column width-5 offset-1">
 							<div class="product-summary">
-								<h1 class="product-title">Конференц Залы</h1>
+								<h1 class="product-title">Nirvana</h1>
 								<div class="product-rating">
 									<span class="star-rating"><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-outlined"></span></span>
 									<a href="#reviews" class="product-review-link scroll-link tab-trigger-click" data-offset="-80" data-target-tab="#reviews">(3 отзыва)</a>
@@ -392,8 +400,59 @@
 								<!-- <div class="product-description">
 									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
 								</div> -->
-								<div class="product-description">
-									<div class="accordion product-addtional-info style-2" data-toggle-icon>
+							
+								<div class="product-cart">
+									<!-- <label>На какой день сделать бронь</label> -->
+
+
+
+									<div class="signup-form-container">
+								
+									<div class="row">
+										<div class="column width-4">
+											<div class="field-wrapper">
+											<label>Забронировать с:</label>
+												<input type="email" name="date11" value="" class="form-email form-element small left" placeholder="Ваш номер телефона*" tabindex="2" required>
+											</div>
+										</div>
+										<div class="column width-1">
+										
+										</div>
+
+
+								
+
+										<div class="column width-4">
+											<div class="field-wrapper">
+											<label>до:</label>
+												<input type="email" name="date11" value="" class="form-email form-element small left" placeholder="Ваш номер телефона*" tabindex="2" required>
+											</div>
+										</div>
+
+
+											<div class="column width-4">
+											<div class="field-wrapper">
+											<label>Стоимость:</label>
+												
+												
+												<div class=" centdiv product-price price"><ins><span class="amount"> 10.000&#8376;</span></ins>
+												</div>
+									</div>
+
+
+											</div>
+
+
+										</div>
+
+
+
+
+
+
+<div class="product-description">
+									<div class="accordion product-addtional-info style-3" data-toggle-icon>
+
 										<ul>
 											<li>
 												<a href="#accordion-more-info">Включенные услуги</a>
@@ -404,23 +463,122 @@
 												</div>
 											</li>
 										</ul>
+
+
+										<ul>
+											<li>
+												<a href="#accordion-more-info">Дополнительные услуги</a>
+												<div id="accordion-more-info">
+													<div class="accordion-content">
+																<div class="column width-8">
+											
+									
+
+								
+											<div class="field-wrapper pt-1 pb-1">
+
+
+
+
+
+
+
+											 	<input id="checkbox-1" class="form-element checkbox" name="checkbox-1" type="checkbox" required>
+												<label for="checkbox-1" class="checkbox-label">Локер [1шт.]  ---  500&#8376;</label>
+											</div>
+
+											
+											 	<input id="checkbox-2" class="form-element checkbox" name="checkbox-2" type="checkbox" required checked="">
+												<label for="checkbox-2" class="checkbox-label">Проектор [1шт.]  ---  2000&#8376;</label>
+										
+	</div>
+													</div>
+												</div>
+											</li>
+										</ul>
 									</div>
 								</div>
-								<div class="product-cart">
-									<label>Кол-во человек (название зала)</label>
-									<div class="form-select form-element medium pull-right">
-										<select name="type">
-											<option selected="selected" value="">1-5 (Kiss)</option>
-											<option value="">5-10 (The Beatles)</option>
-											<option value="">10-15 (Led Zeppelin)</option>
-											<option value="">15-20 (Pink Floyd)</option>
-											<option value="">20-25 (Queen)</option>
-										</select>
+
+
+
 									</div>
-									<label>На какое время (час)</label>
+
+
+										<script type="text/javascript">
+				$(function(){
+					$('*[name=date10]').appendDtpicker({
+						"futureOnly": true,
+						"firstDayOfWeek": 1,
+						"closeOnSelected": true
+					});
+				});
+				$(function(){
+					$('*[name=date11]').appendDtpicker({
+						"futureOnly": true,
+						"firstDayOfWeek": 1,
+						"closeOnSelected": true
+					});
+				});
+			</script>
+
+
+
+
+												
+
+
+
+									<div class="column width-7">
+											
+									
+
+								
+											<div class="field-wrapper pt-1 pb-1">
+
+											 	<input id="checkbox-3" class="form-element small checkbox" name="checkbox-3" type="checkbox" required>
+												<label for="checkbox-3" class="checkbox-label">Оформить документы на компанию</label>
+											</div>
+
+											
+											 	<input id="checkbox-4" class="form-element small checkbox" name="checkbox-4" type="checkbox" required>
+												<label for="checkbox-4" class="checkbox-label"><b>Согласен(-а) с условиями оферты</b></label>
+
+
+										
+	</div>
+<div class="column width-4 ">
+											
+			
+											
+									
+
+								
+										<div class="field-wrapper">
+											<label>Итого</label>
+												<h3>12.000&#8376;</h3>
+											</div>	
+
+										
+										<button class="button  medium " >Забронировать</button>
+												</div>
+											
+											
+											
+										
+	</div>
+
+
+
+								<div class="form-response show"></div>
+							</div>
+
+
+										
+		
+						<!-- <label>На какое время (час)</label>
 									<input type="number" step="1" min="1" name="quantity" value="1" title="Qty" class="form-element quantity" size="4">
 									<button class="button add-to-cart-button">Забронировать</button>
-								</div>
+								</div> -->
 								<!-- With Options
 								<div class="product-cart">
 									<div class="row">
@@ -453,17 +611,24 @@
 									<input type="number" step="1" min="1" name="quantity" value="1" title="Qty" class="form-element quantity" size="4">
 									<button class="add-to-cart-button">Add To Cart</button>
 								</div>-->
-								<hr>
-								<div class="product-meta">
+								
+								
+								
+									
+
+								
+
+
+
+
+						
+
+
 									<!--<span class="sku-container">Итого: <span class="sku"></span>-->
-								<div class="product-price price"><ins><span class="amount">Итого: 10.000&#8376;</span></ins></div>
+								
 								</div>
-								<hr>
-								<ul class="social-list list-horizontal">
-									<li><a href="#"><span class="icon-twitter small"></span></a><li>
-									<li><a href="#"><span class="icon-facebook small"></span></a></li>
-								</ul>
-								<hr class="hide show-on-mobile">
+								
+							
 							</div>
 						</div>
 					</div>
@@ -487,7 +652,7 @@
 								<div class="tab-panes">
 									<div id="tabs-1-pane-1" class="active animate">
 										<div class="tab-content">
-											<p>Обслуживаемые комфортные офисы со встроенной мебелью и высокоскоростной интернетом</p>
+											<p>Удобный оборудованный мебелью и техникой конференц зал на 6 человек площадью 14,40 м2. Удобный сервис онлайн бронирования и оплаты. Доступ по картам приглашенных. Акустическая звукоизоляция. Постоянная уборка помещений.</p>
 										</div>
 									</div>
 									<div id="tabs-1-pane-2">
@@ -598,8 +763,13 @@
 					<!-- Products Similar -->
 					<div class="row products-similar">
 						<div class="column width-12">
+
+						
+	
+
+
 							<hr>
-							<h5 class="mb-50">Наши услуги</h5>
+							<h5 class="mb-50">Похожие варианты</h5>
 							<div id="product-grid" class="grid-container products fade-in-progressively no-padding-top" data-layout-mode="masonry" data-grid-ratio="1.5" data-animate-resize data-animate-resize-duration="0">
 								<div class="row">
 									<div class="column width-12">
@@ -624,10 +794,10 @@
 												<div class="product-details center">
 													<h3 class="product-title">
 														<a href="#">
-															Коворкинг зона
+															Metallica
 														</a>
 													</h3>
-													<span class="product-price price"><del></del><ins><span class="amount">от 5000&#8376;/час</span></ins></span>
+													<span class="product-price price"><del></del><ins><span class="amount">от 10000&#8376;/час</span></ins></span>
 													<div class="product-actions-mobile">
 														<a href="#" class="button add-to-cart-button small">Забронировать</a>
 													</div>
@@ -653,10 +823,10 @@
 												<div class="product-details center">
 													<h3 class="product-title">
 														<a href="#">
-															Expo-зона
+															Coldplay
 														</a>
 													</h3>
-													<span class="product-price price"><ins><span class="amount">25.000&#8376;/час</span></ins></span>
+													<span class="product-price price"><ins><span class="amount">12000&#8376;/час</span></ins></span>
 													<div class="product-actions-mobile">
 														<a href="#" class="button add-to-cart-button small">Забронировать</a>
 													</div>
@@ -681,10 +851,10 @@
 												<div class="product-details center">
 													<h3 class="product-title">
 														<a href="#">
-															Амфитеатр 
+															Offspring
 														</a>
 													</h3>
-													<span class="product-price price"><ins><span class="amount">15.000&#8376;/час</span></ins></span>
+													<span class="product-price price"><ins><span class="amount">12000&#8376;/час</span></ins></span>
 													<div class="product-actions-mobile">
 														<a href="#" class="button add-to-cart-button small">Забронировать</a>
 													</div>
@@ -700,6 +870,7 @@
 
 				</div>
 			</div>
+			<br>
 			<!-- Content End -->
 
 <!-- Footer -->
@@ -771,7 +942,7 @@
 	</div>
 
 	<!-- Js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 	<script src="http://maps.googleapis.com/maps/api/js?v=3"></script>
 	<script src="js/timber.master.min.js"></script>
 </body>

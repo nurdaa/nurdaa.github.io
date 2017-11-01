@@ -1152,7 +1152,7 @@ img.rounded {
     top: 0
 }
 .thumbnail .caption-over-outer {
-    width: 100%;
+    width: 96%;
     height: 10%;
     padding: 0rem;
 
@@ -8128,7 +8128,7 @@ body.boxed .header .header-inner {
 }
 .intro-title-2 {
     height: 40rem;
-    background-image: url(../images/slider/slide-9-fw.jpg);
+    background-image: url(../images/slider/slide-90-fw.jpg);
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover
